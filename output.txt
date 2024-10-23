@@ -1,0 +1,117 @@
+TASK A
+INSERT 0 1
+SELECT 13
+       bno                title           author    category  price  sales
+0   100009  Annals of the World   John A. McPhee  Science     15.99      0
+1   100011    DESIGN OF DISSENT         R Glaser  Arts        19.99      0
+2   100014       Talk to Anyone     Leil Lowndes  Lifestyle   12.99      0
+3   100006     Advanced Biology  Phillip E. Pack  Science     35.00      3
+4   100007  Guide to Everything  John R. Gribbin  Science     40.00     11
+5   100004       Dark Prejudice       JK Rowling  Leisure      7.99     10
+6   100003   His Dark Materials   Philip Pullman  Leisure     10.99      8
+7   100005   Kill a Mockingbird       Harper Lee  Leisure     10.99      5
+8   100010        PURPLE HEARTS      Nina Berman  Arts        17.99      9
+9   100002  Pride and Prejudice      Jane Austen  Leisure     12.99      7
+10  100012   CHANGING THE EARTH    Diana Bletter  Arts        22.00      2
+11  100008      Alpha and Omega    Charles Seife  Science     17.99      2
+12  234567  Python Crash Course       Matthes E.  Science     24.22      0
+TASK C
+INSERT 0 1
+SELECT 11
+       cno              name                         address  balance
+0   100002     Ralph Morston        12 Plain Drive,Lowestoft     0.00
+1   100005     Moira Stewart        7 The Medows, Manchester     0.00
+2   100007      Paula Newman            25 Mill Hill, London   144.90
+3   100003      Marion Jones            The Cottage, Dunston   118.97
+4   100008       David Jones           11 St Georges, London    51.96
+5   100004     James Olivier  5 Livinstone Square, Birmigham   123.90
+6   100006  Jonathan Bircham        20 Oxford Street, London   145.90
+7   100009    Patricia Lewis        101 High Street, Glasgow    88.93
+8   100010    Martha Bramley        12 Catton Grove, Norwich    84.97
+9   100001      Allan Brooke   1 The Medows,Norwich, Norfolk   360.98
+10  789212           Liza, F          1 High St., Colchester     0.00
+TASK E
+CALL
+SELECT 11
+       cno              name                         address  balance
+0   100002     Ralph Morston        12 Plain Drive,Lowestoft     0.00
+1   100005     Moira Stewart        7 The Medows, Manchester     0.00
+2   100007      Paula Newman            25 Mill Hill, London   144.90
+3   100003      Marion Jones            The Cottage, Dunston   118.97
+4   100008       David Jones           11 St Georges, London    51.96
+5   100004     James Olivier  5 Livinstone Square, Birmigham   123.90
+6   100006  Jonathan Bircham        20 Oxford Street, London   145.90
+7   100009    Patricia Lewis        101 High Street, Glasgow    88.93
+8   100010    Martha Bramley        12 Catton Grove, Norwich    84.97
+9   100001      Allan Brooke   1 The Medows,Norwich, Norfolk   360.98
+10  789212           Liza, F          1 High St., Colchester   290.64
+SELECT 13
+       bno                title           author    category  price  sales
+0   100009  Annals of the World   John A. McPhee  Science     15.99      0
+1   100011    DESIGN OF DISSENT         R Glaser  Arts        19.99      0
+2   100014       Talk to Anyone     Leil Lowndes  Lifestyle   12.99      0
+3   100006     Advanced Biology  Phillip E. Pack  Science     35.00      3
+4   100007  Guide to Everything  John R. Gribbin  Science     40.00     11
+5   100004       Dark Prejudice       JK Rowling  Leisure      7.99     10
+6   100003   His Dark Materials   Philip Pullman  Leisure     10.99      8
+7   100005   Kill a Mockingbird       Harper Lee  Leisure     10.99      5
+8   100010        PURPLE HEARTS      Nina Berman  Arts        17.99      9
+9   100002  Pride and Prejudice      Jane Austen  Leisure     12.99      7
+10  100012   CHANGING THE EARTH    Diana Bletter  Arts        22.00      2
+11  100008      Alpha and Omega    Charles Seife  Science     17.99      2
+12  234567  Python Crash Course       Matthes E.  Science     24.22     12
+SELECT 18
+       cno     bno                  ordertime  qty
+0   100001  100007 2022-12-11 19:34:09.433758    4
+1   100001  100006 2022-12-11 19:34:09.433758    3
+2   100003  100007 2022-12-11 19:34:09.433758    2
+3   100008  100005 2022-12-11 19:34:09.433758    2
+4   100001  100007 2022-03-04 13:00:03.000000    4
+5   100009  100003 2022-04-04 13:00:03.000000    3
+6   100010  100007 2022-04-08 12:00:03.000000    1
+7   100004  100004 2022-05-09 12:00:03.000000   10
+8   100007  100010 2022-04-09 16:00:03.000000    5
+9   100007  100003 2022-04-09 16:00:03.000000    5
+10  100006  100005 2022-04-09 16:00:03.000000    3
+11  100006  100010 2022-05-03 15:00:00.000000    4
+12  100006  100002 2022-06-03 11:00:00.000000    2
+13  100003  100002 2022-08-03 11:00:00.000000    3
+14  100009  100002 2022-08-05 11:00:00.000000    2
+15  100004  100012 2022-08-05 11:00:00.000000    2
+16  100001  100008 2022-08-05 11:00:00.000000    2
+17  789212  234567 2022-12-11 19:49:09.518700   12
+TASK F
+CALL
+SELECT 2
+                         pay_user                   pay_time  pay_cno  old_balance  new_balance
+0  txn22ydu                       2022-12-11 19:49:09.518700   789212         0.00       290.64
+1  txn22ydu                       2022-12-11 19:49:09.823350   789212       290.64       240.65
+TASK G
+SELECT 1
+                 title     name                 address
+0  Python Crash Course  Liza, F  1 High St., Colchester
+TASK H
+SELECT 1
+      name     bno                title      author
+0  Liza, F  234567  Python Crash Course  Matthes E.
+TASK I
+SELECT 3
+     category  total_book_sold  total_book_value
+0  Leisure                  30            313.70
+1  Arts                     11            205.91
+2  Science                  28            871.62
+TASK J
+SELECT 9
+      cno              name  sum
+0  100001      Allan Brooke   13
+1  100003      Marion Jones    5
+2  100004     James Olivier   12
+3  100006  Jonathan Bircham    9
+4  100007      Paula Newman   10
+5  100008       David Jones    2
+6  100009    Patricia Lewis    5
+7  100010    Martha Bramley    1
+8  789212           Liza, F   12
+
+
+Exit program!
